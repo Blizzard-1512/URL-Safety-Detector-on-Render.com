@@ -11,4 +11,5 @@ seaborn
 streamlit
 tensorflow
 tensorflow_intel
+plotly
 xgboost
