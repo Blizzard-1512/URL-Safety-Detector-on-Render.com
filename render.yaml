@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: url-safety-prediction
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "streamlit run app.py --server.port $PORT --server.enableCORS false"
+    envVars:
+      - key: PORT
+        value: "8501"  # Use the dynamic port provided by Render
